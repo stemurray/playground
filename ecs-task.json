@@ -1,0 +1,94 @@
+{
+   "failures": [ 
+      { 
+         "arn": "string",
+         "reason": "string"
+      }
+   ],
+   "tasks": [ 
+      { 
+         "attachments": [ 
+            { 
+               "details": [ 
+                  { 
+                     "name": "string",
+                     "value": "string"
+                  }
+               ],
+               "id": "string",
+               "status": "string",
+               "type": "string"
+            }
+         ],
+         "clusterArn": "string",
+         "connectivity": "string",
+         "connectivityAt": number,
+         "containerInstanceArn": "string",
+         "containers": [ 
+            { 
+               "containerArn": "string",
+               "exitCode": number,
+               "healthStatus": "string",
+               "lastStatus": "string",
+               "name": "string",
+               "networkBindings": [ 
+                  { 
+                     "bindIP": "string",
+                     "containerPort": number,
+                     "hostPort": number,
+                     "protocol": "string"
+                  }
+               ],
+               "networkInterfaces": [ 
+                  { 
+                     "attachmentId": "string",
+                     "ipv6Address": "string",
+                     "privateIpv4Address": "string"
+                  }
+               ],
+               "reason": "string",
+               "taskArn": "string"
+            }
+         ],
+         "cpu": "string",
+         "createdAt": number,
+         "desiredStatus": "string",
+         "executionStoppedAt": number,
+         "group": "string",
+         "healthStatus": "string",
+         "lastStatus": "string",
+         "launchType": "string",
+         "memory": "string",
+         "overrides": { 
+            "containerOverrides": [ 
+               { 
+                  "command": [ "string" ],
+                  "cpu": number,
+                  "environment": [ 
+                     { 
+                        "name": "string",
+                        "value": "string"
+                     }
+                  ],
+                  "memory": number,
+                  "memoryReservation": number,
+                  "name": "string"
+               }
+            ],
+            "executionRoleArn": "string",
+            "taskRoleArn": "string"
+         },
+         "platformVersion": "string",
+         "pullStartedAt": number,
+         "pullStoppedAt": number,
+         "startedAt": number,
+         "startedBy": "string",
+         "stoppedAt": number,
+         "stoppedReason": "string",
+         "stoppingAt": number,
+         "taskArn": "string",
+         "taskDefinitionArn": "string",
+         "version": number
+      }
+   ]
+}
