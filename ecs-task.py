@@ -1,7 +1,7 @@
 import json
 import boto3
 
-def lambda_handler(event, context):
+def ecs_task_state_change_to_ddb_handler(event, context):
 
     # For debugging so you can see raw event format.
     # print('Here is the event:')
@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     # Initialise DDB table parameters
     print(event["id"] + " : Initialising parameters")
     region_name = "eu-west-1"
-    table_name = "ECSTaskStateStore"
+    table_name = "ECSTaskStateChanges"
     partition_key_name = "taskArn"
     sort_key_name = "eventVersion"
     event_arn = event["detail"]["taskArn"]
